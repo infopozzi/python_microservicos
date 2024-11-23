@@ -32,6 +32,8 @@ def obter_atividade(id_atividade):
     raise AtividadeNotFound
 
 def salvar_atividade(atividade):
+    id = len(atividades) + 1
+    atividade["id_atividade"] = id
     atividades.append(atividade)
 
 def alterar_atividade(atividade):
